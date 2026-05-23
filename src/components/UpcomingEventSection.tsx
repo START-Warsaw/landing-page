@@ -25,12 +25,12 @@ export default function UpcomingEventSection() {
 
         <div className="grid lg:grid-cols-2 gap-8 items-stretch">
           {/* Image */}
-          <div className="relative min-h-[300px] bg-navy-dark rounded-2xl overflow-hidden">
+          <div className="relative aspect-video bg-navy-dark rounded-2xl overflow-hidden">
             <Image
               src={event.image}
               alt={event.title}
               fill
-              className="object-contain"
+              className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
             <div className="absolute top-5 left-5">
@@ -48,11 +48,11 @@ export default function UpcomingEventSection() {
 
             <div className="space-y-3 mb-8">
               <div className="flex items-center gap-3 text-white/60 text-[13px]">
-                <span className="text-pink font-bold text-[15px]">◷</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-pink shrink-0"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 {event.date} · {event.time}
               </div>
               <div className="flex items-center gap-3 text-white/60 text-[13px]">
-                <span className="text-pink font-bold text-[15px]">◎</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-pink shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 {event.location}
               </div>
             </div>

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import AnnouncementBanner from "@/components/AnnouncementBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import {
@@ -103,8 +102,8 @@ const faqs = [
 export default function ApplyPage() {
   return (
     <>
-      <AnnouncementBanner />
       <Navbar />
+      <div className="h-[68px]" />
 
       <main className="bg-navy">
 

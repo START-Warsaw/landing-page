@@ -1,4 +1,3 @@
-import AnnouncementBanner from "@/components/AnnouncementBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -7,8 +6,8 @@ export const metadata = { title: "Privacy Policy – START Warsaw" };
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <AnnouncementBanner />
       <Navbar />
+      <div className="h-[68px]" />
       <main className="min-h-screen bg-navy px-6 pt-[140px] pb-24">
         <div className="max-w-[800px] mx-auto">
           <p className="text-white/40 text-[11px] uppercase tracking-[0.3em] font-semibold mb-6">

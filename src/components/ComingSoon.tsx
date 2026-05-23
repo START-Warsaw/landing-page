@@ -1,14 +1,13 @@
 import Link from "next/link";
-import AnnouncementBanner from "./AnnouncementBanner";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 export default function ComingSoon({ title }: { title: string }) {
   return (
     <>
-      <AnnouncementBanner />
       <Navbar />
-      <main className="min-h-screen bg-navy flex flex-col items-center justify-center px-6 pt-[105px] pb-24">
+      <div className="h-[68px]" />
+      <main className="min-h-screen bg-navy flex flex-col items-center justify-center px-6 pb-24">
         <p className="text-white/30 text-[11px] uppercase tracking-[0.3em] font-semibold mb-6">
           {title}
         </p>

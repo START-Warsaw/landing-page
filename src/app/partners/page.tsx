@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import AnnouncementBanner from "@/components/AnnouncementBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import {
@@ -126,7 +125,6 @@ export default function PartnersPage() {
     <>
       <Navbar />
       <div className="h-[68px]" />
-      <AnnouncementBanner />
 
       <main className="bg-navy">
 
@@ -202,10 +200,10 @@ export default function PartnersPage() {
         <section className="bg-navy-dark border-b border-white/5 py-20">
           <div className="max-w-[1400px] mx-auto px-6 lg:px-10 mb-12">
             <p className="text-white/40 text-[11px] font-semibold uppercase tracking-[0.25em] mb-3">
-              Who We Work With
+              Selected Partners
             </p>
             <h2 className="text-[clamp(28px,3.5vw,48px)] font-black text-white uppercase leading-tight">
-              Trusted by Leading<br />Organizations
+              Supported Us Leading<br />Organizations
             </h2>
           </div>
           <div className="overflow-hidden relative">
@@ -236,7 +234,7 @@ export default function PartnersPage() {
                 Why Start
               </p>
               <h2 className="text-[clamp(32px,4.5vw,60px)] font-black text-white uppercase leading-tight tracking-tight mb-6">
-                Why Partner<br />With START
+                Why Partner<br />With START Warsaw
               </h2>
               <p className="text-white/55 text-[15px] leading-relaxed">
                 A practical partnership model built around academic excellence, thought
