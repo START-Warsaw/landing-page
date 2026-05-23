@@ -1,5 +1,5 @@
 import ComingSoon from "@/components/ComingSoon";
 
-export default function MerchPage() {
+export default function Donate() {
   return <ComingSoon title="Donate" />;
 }

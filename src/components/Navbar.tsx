@@ -40,7 +40,7 @@ export default function Navbar() {
         {/* Desktop Right Actions */}
         <div className="hidden lg:flex items-center gap-5">
           <Link
-            href="/merch"
+            href="/donate"
             className="border border-white/30 text-white text-[11px] font-bold tracking-[0.18em] uppercase px-6 py-2.5 hover:border-white/60 hover:text-white transition-all rounded-xl"
           >
             DONATE
@@ -88,7 +88,7 @@ export default function Navbar() {
           ))}
           <div className="pt-4 border-t border-white/10 flex flex-col gap-3">
             <Link
-              href="/merch"
+              href="/donate"
               className="block border border-white/30 text-white text-center text-sm font-bold tracking-widest uppercase px-6 py-3 rounded-xl"
               onClick={() => setMenuOpen(false)}
             >
