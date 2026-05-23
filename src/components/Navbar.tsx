@@ -43,7 +43,7 @@ export default function Navbar() {
             href="/merch"
             className="border border-white/30 text-white text-[11px] font-bold tracking-[0.18em] uppercase px-6 py-2.5 hover:border-white/60 hover:text-white transition-all rounded-xl"
           >
-            BUY MERCH
+            DONATE
           </Link>
           <Link
             href="/apply"
@@ -92,7 +92,7 @@ export default function Navbar() {
               className="block border border-white/30 text-white text-center text-sm font-bold tracking-widest uppercase px-6 py-3 rounded-xl"
               onClick={() => setMenuOpen(false)}
             >
-              BUY MERCH
+              DONATE
             </Link>
             <Link
               href="/apply"
