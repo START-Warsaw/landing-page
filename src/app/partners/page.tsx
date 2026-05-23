@@ -38,7 +38,7 @@ const whyPillars = [
     bg: "rgba(99,102,241,0.12)",
     title: "Thought Leadership",
     description:
-      "Share your expertise through workshops, talks, panels, and hands-on formats. START gives your team a credible stage in front of ambitious students, builders, and future founders.",
+      "Share your expertise through workshops, talks, panels, and hands-on formats. START Warsaw gives your team a credible stage in front of ambitious students, builders, and future founders.",
   },
   {
     Icon: ChartLineUp,
@@ -75,7 +75,7 @@ const collaborationOptions = [
     num: "02",
     title: "Recruit Top Talent",
     description:
-      "Get direct access to our highly motivated member base through personal engagement, CV databases, and exclusive hiring opportunities.",
+      "Get direct access to our highly motivated member base through personal engagement, and exclusive hiring opportunities.",
   },
   {
     Icon: ChalkboardTeacher,
@@ -103,8 +103,8 @@ const faqs = [
     a: "We can move fast and sometimes launch within days. Please check our event calendar first. If you want to join a specific event, contact us as early as possible so we can plan it with you.",
   },
   {
-    q: "How can we recruit START members?",
-    a: "Partners get exclusive access to our talent pool through dedicated recruiting events, curated CV database access of consenting community members and event attendees, and priority placement on our job board. You can also host office tours and info sessions.",
+    q: "How can we recruit START Warsaw members?",
+    a: "Partners get exclusive access to our talent pool through dedicated recruiting events, access of consenting community members and event attendees, and priority placement on our job board. You can also host office tours and info sessions.",
   },
   {
     q: "What events can partners sponsor?",
@@ -169,7 +169,7 @@ export default function PartnersPage() {
                   find the right collaboration format for your goals.
                 </p>
               </div>
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
+              <div className="flex flex-col sm:flex-row items-start gap-8">
                 <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0">
                   <Image
                     src="/assets/members/patryk_ostern.jpg"
