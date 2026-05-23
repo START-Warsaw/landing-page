@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/* Avenir LT Next Pro — place font files in /public/fonts/ */
+@font-face {
+  font-family: "AvenirLTNextPro";
+  src: url("/fonts/AvenirLTNextPro-Regular.woff2") format("woff2"),
+       url("/fonts/AvenirLTNextPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirLTNextPro";
+  src: url("/fonts/AvenirLTNextPro-Medium.woff2") format("woff2"),
+       url("/fonts/AvenirLTNextPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirLTNextPro";
+  src: url("/fonts/AvenirLTNextPro-Demi.woff2") format("woff2"),
+       url("/fonts/AvenirLTNextPro-Demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirLTNextPro";
+  src: url("/fonts/AvenirLTNextPro-Heavy.woff2") format("woff2"),
+       url("/fonts/AvenirLTNextPro-Heavy.woff") format("woff");
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom design tokens for START Warsaw */
+@theme {
+  --color-navy: #00002c;
+  --color-navy-dark: #00001e;
+  --color-navy-mid: #000026;
+  --color-pink: #80011f;
+}
+
+/* Blob animation for hero section */
+@keyframes blob {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(30px, -50px) scale(1.1); }
+  66%  { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+.animate-blob {
+  animation: blob 8s infinite ease-in-out;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+:root {
+  --background: #00002c;
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "AvenirLTNextPro", "Avenir Next", "Avenir", sans-serif;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+/* Marquee animations */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  animation: marquee-left 35s linear infinite;
+  width: max-content;
+}
+
+.marquee-track-reverse {
+  display: flex;
+  animation: marquee-right 35s linear infinite;
+  width: max-content;
+}
+
+.marquee-track:hover,
+.marquee-track-reverse:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-down {
+  0%   { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
+
+.marquee-vertical-down {
+  display: flex;
+  flex-direction: column;
+  animation: marquee-down 28s linear infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.7s ease forwards;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #00002c;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff22;
+  border-radius: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
