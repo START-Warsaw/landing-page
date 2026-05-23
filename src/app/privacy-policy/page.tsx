@@ -64,7 +64,24 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-white/80 font-semibold">b) Website Analytics</h3>
+                <h3 className="text-white/80 font-semibold">b) Waitlist — Email Notification</h3>
+                <p>Information collected through the waitlist form on www.startwarsaw.org/apply includes:</p>
+                <ul className="list-none space-y-2 pl-4">
+                  {["Email address"].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="text-pink mt-1 text-[10px]">◆</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <p><span className="text-white/80 font-semibold">Purpose:</span> Notifying the subscriber when the next application window opens.</p>
+                <p><span className="text-white/80 font-semibold">Legal basis:</span> Your consent (Art. 6(1)(a) GDPR), given at the time of submission.</p>
+                <p><span className="text-white/80 font-semibold">Retention:</span> Data is retained until the notification is sent or until consent is withdrawn, whichever occurs sooner.</p>
+                <p><span className="text-white/80 font-semibold">Third-party processor:</span> Google LLC processes submitted data via Google Forms and Google Sheets, subject to Google&apos;s privacy policy.</p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-white/80 font-semibold">c) Website Analytics</h3>
                 <p>Google Analytics 4 collects:</p>
                 <ul className="list-none space-y-2 pl-4">
                   {[
@@ -123,7 +140,7 @@ export default function PrivacyPolicyPage() {
             <section className="space-y-4">
               <h2 className="text-white text-[18px] font-bold uppercase tracking-wide">6. Data Security</h2>
               <p>
-                Technical and organizational safeguards protect personal data against unauthorized access, loss, or misuse. Webflow manages waitlist data per its privacy practices.
+                Technical and organizational safeguards protect personal data against unauthorized access, loss, or misuse. Google LLC processes waitlist data via Google Forms and Google Sheets per Google&apos;s privacy practices.
               </p>
             </section>
 
