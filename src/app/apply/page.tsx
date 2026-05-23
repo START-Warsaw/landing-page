@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WaitlistForm from "@/components/WaitlistForm";
 import {
   PencilLine,
   PhoneCall,
@@ -142,22 +143,10 @@ export default function ApplyPage() {
               build things that matter. Applications open every semester.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://startwarsaw.notion.site"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white text-black px-10 py-4 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-white/90 transition-colors rounded-xl"
-              >
-                Apply Now
-              </a>
-              <Link
-                href="/about-us"
-                className="inline-block border border-white/25 text-white px-10 py-4 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-white/10 hover:border-white/50 transition-all rounded-xl"
-              >
-                Learn More
-              </Link>
-            </div>
+            <p className="text-white/50 text-[12px] uppercase tracking-[0.2em] font-semibold mb-4">
+              Drop your email — we&apos;ll notify you when applications open.
+            </p>
+            <WaitlistForm />
           </div>
         </section>
 
@@ -297,25 +286,14 @@ export default function ApplyPage() {
             <h2 className="text-[clamp(40px,6vw,88px)] font-black text-white uppercase leading-[0.9] tracking-tight mb-8">
               Ready to<br />Dare, Build,<br />Belong?
             </h2>
-            <p className="text-white/60 text-[16px] max-w-lg mx-auto leading-relaxed mb-12">
-              The next cohort opens in October. Apply early — spots are limited and
-              go fast.
+            <p className="text-white/60 text-[16px] max-w-lg mx-auto leading-relaxed mb-4">
+              The next cohort opens in October. Drop your email and be the first to know.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://startwarsaw.notion.site"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-white text-black px-12 py-4 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-white/90 transition-colors rounded-xl"
-              >
-                Apply Now
-              </a>
-              <Link
-                href="/events"
-                className="inline-block border border-white/25 text-white px-12 py-4 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-white/10 hover:border-white/50 transition-all rounded-xl"
-              >
-                See Our Events
-              </Link>
+            <p className="text-white/40 text-[11px] uppercase tracking-[0.2em] font-semibold mb-8">
+              No spam. Just one email when applications open.
+            </p>
+            <div className="flex justify-center">
+              <WaitlistForm />
             </div>
           </div>
         </section>
