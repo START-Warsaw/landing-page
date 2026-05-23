@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WaitlistForm from "@/components/WaitlistForm";
+import FaqAccordion from "@/components/FaqAccordion";
 import {
   PencilLine,
   PhoneCall,
@@ -244,21 +245,14 @@ export default function ApplyPage() {
         <section className="border-b border-white/5 py-28">
           <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
             <div className="max-w-3xl mb-16">
-              <p className="text-white/40 text-[11px] font-semibold uppercase tracking-[0.3em] mb-3">
+              <p className="text-pink text-[11px] font-semibold uppercase tracking-[0.25em] mb-6">
                 FAQ
               </p>
-              <h2 className="text-[clamp(36px,5vw,68px)] font-black text-white uppercase leading-none tracking-tight">
-                Questions
+              <h2 className="text-[clamp(32px,4.5vw,60px)] font-black text-white uppercase leading-tight tracking-tight">
+                Frequently Asked<br />Questions
               </h2>
             </div>
-            <div className="max-w-3xl divide-y divide-white/10">
-              {faqs.map((faq, i) => (
-                <div key={i} className="py-8">
-                  <p className="text-white font-bold text-[17px] mb-3">{faq.q}</p>
-                  <p className="text-white/55 text-[14px] leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
-            </div>
+            <FaqAccordion faqs={faqs} />
           </div>
         </section>
 
