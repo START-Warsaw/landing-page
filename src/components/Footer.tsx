@@ -92,6 +92,17 @@ export default function Footer() {
           <p className="text-white/30 text-[11px]">
             © 2026 START Warsaw. All rights reserved.
           </p>
+          <p className="text-white/20 text-[11px]">
+            Inspired by{" "}
+            <a
+              href="https://startmunich.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white/50 transition-colors"
+            >
+              startmunich.de
+            </a>
+          </p>
           <div className="flex items-center gap-6">
             <Link
               href="/legal-notice"
