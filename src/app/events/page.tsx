@@ -15,7 +15,7 @@ const upcomingEvents = [
       "Watch the first-ever START Warsaw cohort present their startups to founders, investors, and the wider Warsaw ecosystem. Batch Alpha's Demo Day is open to all.",
     registered: 58,
     image:
-      "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=800,height=450/uploads/jb/edde21b5-ede0-47c2-ba9d-5c3cd73b8331.jpg",
+      "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=800,height=450/uploads/jb/edde21b5-ede0-47c2-ba9d-5c3cd73b8331.jpg",
     lumaUrl: "https://luma.com/na2nxob0",
     tag: "Demo Day",
   },
@@ -29,7 +29,7 @@ const pastEvents = [
     description:
       "An informal evening for founders, students, and curious minds — conversations over drinks, no pitch decks allowed.",
     image:
-      "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=800,height=450/event-covers/o0/3fdca25f-3b62-44a4-8dbc-8345bbbba11e.jpg",
+      "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=800,height=450/event-covers/o0/3fdca25f-3b62-44a4-8dbc-8345bbbba11e.jpg",
     lumaUrl: "https://luma.com/nj4ycht7",
     tag: "Networking",
   },
@@ -78,6 +78,7 @@ export default function EventsPage() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
                 />
                 <div className="absolute top-5 left-5">
                   <span className="bg-pink text-white text-[10px] font-bold uppercase tracking-[0.2em] px-3 py-1.5 rounded-lg">
