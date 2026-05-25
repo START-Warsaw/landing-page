@@ -73,7 +73,7 @@ export default function CommunitySection() {
               <p className="text-white/40 text-[10px] uppercase tracking-[0.25em] font-semibold mb-6">
                 Our Members Come From
               </p>
-              <div className="flex items-center gap-8 flex-wrap">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center justify-items-center">
                 <Image
                   src="/assets/unis/pw.png"
                   alt="Warsaw University of Technology"
