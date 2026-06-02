@@ -16,10 +16,13 @@ import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata = { title: "Partners – START Warsaw" };
 
-const partners = [
+const partners: { name: string; src: string }[] = [
+  { name: "Lovable",   src: "/assets/brands/lovable.svg" },
+  { name: "Cursor",    src: "/assets/brands/cursor.svg" },
   { name: "PKO BP",    src: "/assets/brands/PKO.svg" },
-  { name: "Cursor",   src: "/assets/brands/cursor.svg" },
-  { name: "Lovable",  src: "/assets/brands/lovable.svg" },
+  { name: "Coca-Cola", src: "/assets/brands/cocacola.svg" },
+  { name: "Monster",   src: "/assets/brands/monster.svg" },
+  { name: "WSB",       src: "/assets/brands/wsb.svg" },
 ];
 const doubled = [...partners, ...partners, ...partners, ...partners];
 
@@ -212,15 +215,15 @@ export default function PartnersPage() {
             <div className="marquee-track gap-16 items-center">
               {doubled.map((partner, i) => (
                 <div key={i} className="flex items-center justify-center h-16 px-12 shrink-0">
-                  <Image
-                    src={partner.src}
-                    alt={partner.name}
-                    width={140}
-                    height={56}
-                    className="object-contain max-h-12 filter brightness-0 invert opacity-50 hover:opacity-100 transition-opacity"
-                    unoptimized
-                  />
-                </div>
+                <Image
+                  src={partner.src}
+                  alt={partner.name}
+                  width={140}
+                  height={56}
+                  className="object-contain max-h-12 filter brightness-0 invert opacity-50 hover:opacity-100 transition-opacity"
+                  unoptimized
+                />
+              </div>
               ))}
             </div>
           </div>

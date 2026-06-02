@@ -1,9 +1,12 @@
 import Image from "next/image";
 
 const partners: { name: string; src?: string; noFilter?: boolean }[] = [
-  { name: "Lovable", src: "/assets/brands/lovable.svg" },
-  { name: "Cursor",  src: "/assets/brands/cursor.svg" },
-  { name: "PKO BP",  src: "/assets/brands/PKO.svg" },
+  { name: "Lovable",   src: "/assets/brands/lovable.svg" },
+  { name: "Cursor",    src: "/assets/brands/cursor.svg" },
+  { name: "PKO BP",    src: "/assets/brands/PKO.svg" },
+  { name: "Coca-Cola", src: "/assets/brands/cocacola.svg" },
+  { name: "Monster",   src: "/assets/brands/monster.svg" },
+  { name: "WSB",       src: "/assets/brands/wsb.svg" },
 ];
 
 const repeated = Array(8).fill(partners).flat();
