@@ -4,17 +4,17 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const studyFields = [
-  { label: "Business", pct: 53 },
-  { label: "Computer Science", pct: 32 },
-  { label: "Finance", pct: 16 },
-  { label: "Others", pct: 11 },
+  { label: "Business", pct: 51 },
+  { label: "Computer Science", pct: 31 },
+  { label: "Finance", pct: 15 },
+  { label: "Others", pct: 15 },
 ];
 
 const universities = [
-  { label: "SGH", pct: 44 },
+  { label: "SGH", pct: 42 },
   { label: "WUT", pct: 11 },
   { label: "PJATK", pct: 11 },
-  { label: "Others", pct: 34 },
+  { label: "Others", pct: 36 },
 ];
 
 function Bar({ pct, color = "bg-pink" }: { pct: number; color?: string }) {
@@ -44,17 +44,18 @@ const batchAlphaMembers = [
   { id:  8, name: "Joanna Stolarska",    photo: "/assets/members/joanna_stolarska.jpg",     linkedin: "https://www.linkedin.com/in/joannastolarska/" },
   { id:  9, name: "Julia Nobis",         photo: "/assets/members/julia_nobis.jpg",          linkedin: "https://www.linkedin.com/in/julia-nobis-906075294/" },
   { id: 10, name: "Kacper Warych",       photo: "/assets/members/kacper_warych.jpeg",       linkedin: "https://www.linkedin.com/in/kacperwarych/" },
-  { id: 11, name: "Michał Antos",        photo: "/assets/members/michal_antos.jpg",         linkedin: "https://www.linkedin.com/in/michalantos/" },
-  { id: 12, name: "Mikołaj Stawicki",    photo: "/assets/members/mikolaj_stawicki.jpg",     linkedin: "https://www.linkedin.com/in/mikolaj-stawicki/" },
-  { id: 13, name: "Oskar Kalbarczyk",    photo: "/assets/members/oskar_kalbarczyk.png",     linkedin: "https://www.linkedin.com/in/oskalbarczyk/" },
-  { id: 14, name: "Patryk Borkowski",    photo: "/assets/members/patryk_borkowski.jpeg",    linkedin: "https://www.linkedin.com/in/patryk-borkowski-pb/" },
-  { id: 15, name: "Patryk Ostern",       photo: "/assets/members/patryk_ostern.jpg",        linkedin: "https://www.linkedin.com/in/patrykostern/" },
-  { id: 16, name: "Piotr Czechowski",    photo: "/assets/members/piotr_czechowski.jpg",     linkedin: "https://www.linkedin.com/in/piotr-czechowski4/" },
-  { id: 17, name: "Rem Karablin",        photo: "/assets/members/rem_karablin.jpg",         linkedin: "https://www.linkedin.com/in/rem-karablin/" },
-  { id: 18, name: "Sebastian Wodecki",   photo: "/assets/members/sebastian_wodecki.jpg",    linkedin: "https://www.linkedin.com/in/sebastian-wodecki/" },
-  { id: 19, name: "Tomasz Brzezinski",   photo: "/assets/members/tomasz_brzezinski.jpg",    linkedin: "https://www.linkedin.com/in/tomaszbrzezinski142/" },
-  { id: 20, name: "Yauheni Futryn",      photo: "/assets/members/yauheni_futryn.jpeg",      linkedin: "https://www.linkedin.com/in/yauhenifutryn/" },
-  { id: 21, name: "Yevhen Maltsev",      photo: "/assets/members/yevhen_maltsev.jpg",       linkedin: "https://www.linkedin.com/in/yevhen-maltsev-990500296/" },
+  { id: 11, name: "Konrad Brzoskowski",  photo: "/assets/members/konrad_brzoskowski.jpeg",  linkedin: "https://www.linkedin.com/in/konrad-brzoskowski/" },
+  { id: 12, name: "Michał Antos",        photo: "/assets/members/michal_antos.jpg",         linkedin: "https://www.linkedin.com/in/michalantos/" },
+  { id: 13, name: "Mikołaj Stawicki",    photo: "/assets/members/mikolaj_stawicki.jpg",     linkedin: "https://www.linkedin.com/in/mikolaj-stawicki/" },
+  { id: 14, name: "Oskar Kalbarczyk",    photo: "/assets/members/oskar_kalbarczyk.png",     linkedin: "https://www.linkedin.com/in/oskalbarczyk/" },
+  { id: 15, name: "Patryk Borkowski",    photo: "/assets/members/patryk_borkowski.jpeg",    linkedin: "https://www.linkedin.com/in/patryk-borkowski-pb/" },
+  { id: 16, name: "Patryk Ostern",       photo: "/assets/members/patryk_ostern.jpg",        linkedin: "https://www.linkedin.com/in/patrykostern/" },
+  { id: 17, name: "Piotr Czechowski",    photo: "/assets/members/piotr_czechowski.jpg",     linkedin: "https://www.linkedin.com/in/piotr-czechowski4/" },
+  { id: 18, name: "Rem Karablin",        photo: "/assets/members/rem_karablin.jpg",         linkedin: "https://www.linkedin.com/in/rem-karablin/" },
+  { id: 19, name: "Sebastian Wodecki",   photo: "/assets/members/sebastian_wodecki.jpg",    linkedin: "https://www.linkedin.com/in/sebastian-wodecki/" },
+  { id: 20, name: "Tomasz Brzezinski",   photo: "/assets/members/tomasz_brzezinski.jpg",    linkedin: "https://www.linkedin.com/in/tomaszbrzezinski142/" },
+  { id: 21, name: "Yauheni Futryn",      photo: "/assets/members/yauheni_futryn.jpeg",      linkedin: "https://www.linkedin.com/in/yauhenifutryn/" },
+  { id: 22, name: "Yevhen Maltsev",      photo: "/assets/members/yevhen_maltsev.jpg",       linkedin: "https://www.linkedin.com/in/yevhen-maltsev-990500296/" },
 ];
 
 
@@ -117,7 +118,7 @@ export default function PeoplePage() {
                   Gender Distribution
                 </p>
                 <div className="space-y-5">
-                  {[{ label: "Male", pct: 80 }, { label: "Female", pct: 20 }].map((item) => (
+                  {[{ label: "Male", pct: 81 }, { label: "Female", pct: 19 }].map((item) => (
                     <div key={item.label}>
                       <div className="flex justify-between mb-2">
                         <span className="text-white text-[13px] font-semibold">{item.label}</span>
@@ -230,7 +231,7 @@ export default function PeoplePage() {
                 Batch Alpha
               </h2>
               <p className="text-white/40 text-[13px] uppercase tracking-[0.15em] mt-2 font-semibold">
-                First Generation · 21 Members
+                First Generation · 22 Members
               </p>
             </div>
 
