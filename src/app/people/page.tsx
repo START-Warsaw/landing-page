@@ -26,11 +26,13 @@ function Bar({ pct, color = "bg-pink" }: { pct: number; color?: string }) {
 }
 
 const currentBoard = [
-  { name: "Patryk Ostern",     role: "Co-President",      dept: "Executive",    photo: "/assets/members/patryk_ostern.jpg",      linkedin: "https://www.linkedin.com/in/patrykostern/" },
-  { name: "Adam Pasierski",    role: "Co-President",      dept: "Executive",    photo: "/assets/members/adam_pasierski.jpg",     linkedin: "https://www.linkedin.com/in/adam-pasierski/" },
-  { name: "Jakub Tybuski",     role: "Head of FinOps",    dept: "FinOps",       photo: "/assets/members/jakub_tybuski.png",      linkedin: "https://www.linkedin.com/in/jakub-tyburski-417245220/" },
-  { name: "Julia Nobis",       role: "Head of Events",    dept: "Events",       photo: "/assets/members/julia_nobis.jpg",        linkedin: "https://www.linkedin.com/in/julia-nobis-906075294/" },
-  { name: "Tomasz Brzezinski", role: "Head of Marketing", dept: "Marketing",    photo: "/assets/members/tomasz_brzezinski.jpg",  linkedin: "https://www.linkedin.com/in/tomaszbrzezinski142/" },
+  { name: "Patryk Ostern",     role: "Co-President",         dept: "Executive",    photo: "/assets/members/patryk_ostern.jpg",      linkedin: "https://www.linkedin.com/in/patrykostern/" },
+  { name: "Adam Pasierski",    role: "Co-President",         dept: "Executive",    photo: "/assets/members/adam_pasierski.jpg",     linkedin: "https://www.linkedin.com/in/adam-pasierski/" },
+  { name: "Jakub Tybuski",     role: "Head of FinOps",       dept: "FinOps",       photo: "/assets/members/jakub_tybuski.png",      linkedin: "https://www.linkedin.com/in/jakub-tyburski-417245220/" },
+  { name: "Julia Nobis",       role: "Head of Events",       dept: "Events",       photo: "/assets/members/julia_nobis.jpg",        linkedin: "https://www.linkedin.com/in/julia-nobis-906075294/" },
+  { name: "Tomasz Brzezinski", role: "Head of Marketing",    dept: "Marketing",    photo: "/assets/members/tomasz_brzezinski.jpg",  linkedin: "https://www.linkedin.com/in/tomaszbrzezinski142/" },
+  { name: "Rem Karablin",      role: "Head of People",       dept: "HR",           photo: "/assets/members/rem_karablin.jpg",       linkedin: "https://www.linkedin.com/in/rem-karablin/" },
+  { name: "Yauheni Futryn",    role: "Head of Partnerships", dept: "Partnerships", photo: "/assets/members/yauheni_futryn.jpeg",    linkedin: "https://www.linkedin.com/in/yauhenifutryn/" },
 ];
 
 const batchAlphaMembers = [
