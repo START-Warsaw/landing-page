@@ -156,7 +156,7 @@ export default function PartnersPage() {
           </div>
         </section>
 
-        {/* Contact — Patryk Ostern */}
+        {/* Contact — Yauheni Futryn */}
         <section className="border-b border-white/5 py-20">
           <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -175,20 +175,20 @@ export default function PartnersPage() {
               <div className="flex flex-col sm:flex-row items-start gap-8">
                 <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0">
                   <Image
-                    src="/assets/members/patryk_ostern.jpg"
-                    alt="Patryk Ostern"
+                    src="/assets/members/yauheni_futryn.jpeg"
+                    alt="Yauheni Futryn"
                     fill
                     className="object-cover object-center"
                     sizes="64px"
                   />
                 </div>
                 <div>
-                  <p className="text-white font-bold text-[18px] mb-1">Patryk Ostern</p>
+                  <p className="text-white font-bold text-[18px] mb-1">Yauheni Futryn</p>
                   <p className="text-white/50 text-[13px] uppercase tracking-[0.15em] mb-6">
                     Head of Partnerships
                   </p>
                   <a
-                    href="mailto:contact@startwarsaw.org"
+                    href="mailto:board@startwarsaw.org"
                     className="inline-block bg-pink text-white text-[11px] font-bold tracking-[0.18em] uppercase px-8 py-3 hover:opacity-90 transition-opacity rounded-xl"
                   >
                     Get in Touch
