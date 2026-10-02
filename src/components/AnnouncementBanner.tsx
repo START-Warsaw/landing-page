@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 const message =
-  "Summer Applications are now closed. Winter applications will open in October";
+  "Applications are now open. Apply before October 18, 23:59";
 
 export default function AnnouncementBanner() {
   const items = Array(12).fill(message);
