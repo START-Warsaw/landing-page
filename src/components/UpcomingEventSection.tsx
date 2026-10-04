@@ -3,6 +3,19 @@ import Link from "next/link";
 
 const events = [
   {
+    title: "VC Insights with Market One Capital",
+    date: "October 15, 2026",
+    isoDate: "2026-10-15",
+    time: "18:00 – 22:00",
+    location: "Market One Capital, Warsaw",
+    description:
+      "Raw, honest insights into early-stage venture capital for young founders and builders, followed by networking over pizza and drinks.",
+    image:
+      "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=800,height=800/uploads/8g/84ff2d1c-1790-49bf-a4af-7f701efe2688.jpg",
+    lumaUrl: "https://luma.com/8fd5xrdr",
+    tag: "Tech",
+  },
+  {
     title: "OpenAI x START Warsaw Hackathon",
     date: "July 11, 2026",
     isoDate: "2026-07-11",
