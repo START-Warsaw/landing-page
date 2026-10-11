@@ -8,6 +8,15 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.lumacdn.com" },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/apply-now",
+        destination: "/apply",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
