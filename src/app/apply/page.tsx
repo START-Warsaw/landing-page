@@ -45,7 +45,7 @@ const process = [
   },
   {
     step: "03",
-    date: "Oct 28",
+    date: "Oct 29",
     Icon: RocketLaunch,
     color: "#ec4899",
     bg: "rgba(236,72,153,0.12)",
@@ -132,7 +132,7 @@ const faqs = [
   },
   {
     q: "When can I apply?",
-    a: "Applications are open now and close on October 18 at 23:59. Interviews run October 19–23, kickoff is October 28, and the START Sprint runs November 5–26, finishing with Demo Day.",
+    a: "Applications are open now and close on October 18 at 23:59. Interviews run October 19–23, kickoff is October 29, and the START Sprint runs November 5–26, finishing with Demo Day.",
   },
 ];
 
