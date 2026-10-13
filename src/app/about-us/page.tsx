@@ -24,7 +24,7 @@ const board = [
 
 
 const stats = [
-  { value: "22", label: "Total Members" },
+  { value: "20", label: "Total Members" },
 ];
 
 export default function AboutUsPage() {

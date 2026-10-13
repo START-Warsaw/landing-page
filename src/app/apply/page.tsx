@@ -304,7 +304,7 @@ export default function ApplyPage() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
               {[
                 { value: "2×", label: "Per year" },
-                { value: "21", label: "Active members" },
+                { value: "20", label: "Active members" },
                 { value: "17+", label: "Countries in network" },
                 { value: "4000+", label: "Alumni worldwide" },
               ].map((s) => (
