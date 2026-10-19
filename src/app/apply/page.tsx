@@ -25,7 +25,7 @@ const NOTION_FORM_URL = "https://startwarsaw.notion.site/bab2e645a48d82df8250015
 const process = [
   {
     step: "01",
-    date: "Until Oct 18",
+    date: "Until Oct 19",
     Icon: PencilLine,
     color: "#f59e0b",
     bg: "rgba(245,158,11,0.12)",
@@ -132,7 +132,7 @@ const faqs = [
   },
   {
     q: "When can I apply?",
-    a: "Applications are open now and close on October 18 at 23:59. Interviews run October 19–23, kickoff is October 29, and the START Sprint runs November 5–26, finishing with Demo Day.",
+    a: "Applications are open now and close on October 19 at 23:59. Interviews run October 19–23, kickoff is October 29, and the START Sprint runs November 5–26, finishing with Demo Day.",
   },
 ];
 

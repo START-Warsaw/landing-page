@@ -2,7 +2,7 @@
 
 import { useSyncExternalStore } from "react";
 
-const DEADLINE = new Date("2026-10-18T23:59:00+02:00").getTime();
+const DEADLINE = new Date("2026-10-19T23:59:00+02:00").getTime();
 
 type TimeLeft = {
   days: number;
