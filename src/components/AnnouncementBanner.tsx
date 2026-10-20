@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 const message =
-  "Applications are now open. Apply before October 19, 23:59";
+  "Applications are now closed. Join the waitlist to be notified when the next batch opens";
 
 export default function AnnouncementBanner() {
   const items = Array(12).fill(message);
