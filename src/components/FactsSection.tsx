@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const facts = [
   { prefix: "€", number: "3",    suffix: "B+", label: "Raised by Network Alumni" },
-  { prefix: "",  number: "22",   suffix: "+",  label: "Cities Worldwide" },
+  { prefix: "",  number: "23",   suffix: "+",  label: "Cities Worldwide" },
   { prefix: "",  number: "17",   suffix: "+",  label: "Countries" },
   { prefix: "",  number: "4000", suffix: "+",  label: "Network Members" },
 ];

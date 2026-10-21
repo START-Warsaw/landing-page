@@ -4,12 +4,12 @@ const cities = [
   "Berlin", "Barcelona", "Hamburg", "Helsinki", "Lausanne",
   "London", "Lima", "Lisbon", "Maastricht", "Mexico City",
   "Milano", "Munich", "Paris", "Nuremberg", "Quito",
-  "São Paulo", "Stuttgart", "Vaduz", "Vienna", "Warsaw",
+  "São Paulo", "Stuttgart", "Vaduz", "Vienna", "Warsaw", "Innsbruck",
   "St. Gallen",
 ];
 
 const networkStats = [
-  { value: "22", label: "Cities" },
+  { value: "23", label: "Cities" },
   { value: "17", label: "Countries" },
   { value: "4000+", label: "Members" },
 ];
