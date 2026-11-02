@@ -123,7 +123,7 @@ export default function PeoplePage() {
               {/* Right — image flush to section bottom */}
               <div className="relative h-[520px] lg:h-[680px] overflow-hidden">
                 <Image
-                  src="/assets/images/hero-1.jpg"
+                  src="/assets/images/inovo-visit.jpg"
                   alt="START Warsaw people"
                   fill
                   className="object-cover object-center"

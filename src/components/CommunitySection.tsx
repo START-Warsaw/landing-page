@@ -14,7 +14,7 @@ export default function CommunitySection() {
       {/* Team photo */}
       <div className="relative w-full h-[420px] md:h-[500px] overflow-hidden">
         <Image
-          src="/assets/images/hero-1.jpg"
+          src="/assets/images/inovo-visit.jpg"
           alt="START Warsaw Community"
           fill
           className="object-cover object-[center_30%]"

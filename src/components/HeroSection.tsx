@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const heroImages = [
-  "/assets/images/hero-3.jpg",
-  "/assets/images/hero-1.jpg",
-  "/assets/images/hero-2.jpg",
+  "/assets/images/kickoff-ws2627.jpg",
+  "/assets/images/inovo-visit.jpg",
+  "/assets/images/monthly.jpg",
 ];
 
 export default function HeroSection() {

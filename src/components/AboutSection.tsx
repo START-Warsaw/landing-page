@@ -52,7 +52,7 @@ export default function AboutSection() {
           {/* Right – photo */}
           <div className="relative h-[420px] lg:h-[560px] overflow-hidden rounded-2xl">
             <Image
-              src="/assets/images/hero-1.jpg"
+              src="/assets/images/inovo-visit.jpg"
               alt="START Warsaw community event"
               fill
               className="object-cover"

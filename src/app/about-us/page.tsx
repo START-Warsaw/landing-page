@@ -68,7 +68,7 @@ export default function AboutUsPage() {
               {/* Right — image flush to section bottom */}
               <div className="relative h-[520px] lg:h-[680px] overflow-hidden">
                 <Image
-                  src="/assets/images/hero-3.jpg"
+                  src="/assets/images/kickoff-ws2627.jpg"
                   alt="START Warsaw community"
                   fill
                   className="object-cover object-center"

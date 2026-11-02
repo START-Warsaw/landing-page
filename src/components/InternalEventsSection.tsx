@@ -20,7 +20,7 @@ const events = [
     cadence: "Monthly",
     description:
       "Each month all active members meet to share updates, pitch their ideas, and connect across the community.",
-    image: "/assets/images/hero-3.jpg",
+    image: "/assets/images/monthly.jpg",
   },
   {
     Icon: UsersThree,
@@ -30,7 +30,7 @@ const events = [
     cadence: "Weekly",
     description:
       "Meet with your department to align on projects, share progress, and keep things moving forward.",
-    image: "/assets/images/hero-1.jpg",
+    image: "/assets/images/inovo-visit.jpg",
   },
   {
     Icon: Hammer,
@@ -40,7 +40,7 @@ const events = [
     cadence: "Recurring",
     description:
       "Spend the weekend building your own startup. No slides — just execution, prototyping, and raw energy.",
-    image: "/assets/images/hero-2.jpg",
+    image: "/assets/images/hacker-house.JPG",
   },
   {
     Icon: Lightbulb,
@@ -50,7 +50,7 @@ const events = [
     cadence: "Recurring",
     description:
       "Hands-on sessions with VCs, founders, and industry professionals. Practical knowledge you actually use.",
-    image: "/assets/images/hero-1.jpg",
+    image: "/assets/images/inovo-visit.jpg",
   },
   {
     Icon: MapPin,
@@ -60,7 +60,7 @@ const events = [
     cadence: "Recurring",
     description:
       "Visit startups and learn from those who've done it. Get behind the scenes of Warsaw's best companies.",
-    image: "/assets/images/hero-2.jpg",
+    image: "/assets/images/start-summit.jpg",
   },
   {
     Icon: Sparkle,
@@ -70,7 +70,7 @@ const events = [
     cadence: null,
     description:
       "Discover many more exciting events and opportunities that come with being part of START Warsaw.",
-    image: "/assets/images/hero-3.jpg",
+    image: "/assets/images/kickoff-ws2627.jpg",
   },
 ];
 

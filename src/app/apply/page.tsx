@@ -111,7 +111,7 @@ export default function ApplyPage() {
         {/* Hero */}
         <section className="relative min-h-[85vh] flex items-center overflow-hidden border-b border-white/5">
           <Image
-            src="/assets/images/hero-3.jpg"
+            src="/assets/images/kickoff-ws2627.jpg"
             alt="START Warsaw community"
             fill
             className="object-cover object-center"
@@ -258,7 +258,7 @@ export default function ApplyPage() {
         {/* CTA */}
         <section className="relative py-36 overflow-hidden">
           <Image
-            src="/assets/images/hero-1.jpg"
+            src="/assets/images/inovo-visit.jpg"
             alt="START Warsaw"
             fill
             className="object-cover object-center"
