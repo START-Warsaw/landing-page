@@ -16,13 +16,15 @@ import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata = { title: "Partners – START Warsaw" };
 
-const partners: { name: string; src: string }[] = [
-  { name: "Lovable",   src: "/assets/brands/lovable.svg" },
-  { name: "Cursor",    src: "/assets/brands/cursor.svg" },
-  { name: "PKO BP",    src: "/assets/brands/PKO.svg" },
-  { name: "Coca-Cola", src: "/assets/brands/cocacola.svg" },
-  { name: "Monster",   src: "/assets/brands/monster.svg" },
-  { name: "WSB",       src: "/assets/brands/wsb.svg" },
+const partners: { name: string; src: string; width?: number; height?: number }[] = [
+  { name: "Lovable",    src: "/assets/brands/lovable.svg" },
+  { name: "Cursor",     src: "/assets/brands/cursor.svg" },
+  { name: "OpenAI",     src: "/assets/brands/openai-white-lockup.png", width: 168, height: 46 },
+  { name: "ElevenLabs", src: "/assets/brands/elevenlabs.png", width: 220, height: 28 },
+  { name: "EWOR",       src: "/assets/brands/ewor.png", width: 150, height: 37 },
+  { name: "PKO BP",     src: "/assets/brands/PKO.svg" },
+  { name: "Coca-Cola",  src: "/assets/brands/cocacola.svg" },
+  { name: "WSB",        src: "/assets/brands/wsb.svg" },
 ];
 const doubled = [...partners, ...partners, ...partners, ...partners];
 
@@ -175,7 +177,7 @@ export default function PartnersPage() {
               <div className="flex flex-col sm:flex-row items-start gap-8">
                 <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0">
                   <Image
-                    src="/assets/members/yauheni_futryn.jpeg"
+                    src="/assets/members/batch_alpha/yauheni_futryn.jpeg"
                     alt="Yauheni Futryn"
                     fill
                     className="object-cover object-center"
@@ -218,8 +220,8 @@ export default function PartnersPage() {
                 <Image
                   src={partner.src}
                   alt={partner.name}
-                  width={140}
-                  height={56}
+                  width={partner.width ?? 140}
+                  height={partner.height ?? 56}
                   className="object-contain max-h-12 filter brightness-0 invert opacity-50 hover:opacity-100 transition-opacity"
                   unoptimized
                 />

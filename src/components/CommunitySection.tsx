@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const stats = [
-  { number: "20", suffix: "",  label: "Active Members" },
+  { number: "41", suffix: "",  label: "Active Members" },
   { number: "2026", suffix: "",  label: "Founded In" },
   { number: "30", suffix: "+", label: "Events Per Year" },
-  { number: "45", suffix: "%",  label: "STEM" },
+  { number: "54", suffix: "%",  label: "STEM" },
 ];
 
 export default function CommunitySection() {
@@ -33,7 +33,7 @@ export default function CommunitySection() {
               What Is<br />START Warsaw
             </h2>
             <p className="text-white/60 text-[15px] leading-relaxed mb-4">
-              With 20 active members and growing alumni, START Warsaw is one of
+              With 41 active members across two batches, START Warsaw is one of
               Poland&apos;s leading student-run entrepreneurship initiatives. Founded
               in 2026, our mission is to build{" "}
               <strong className="text-white font-bold">

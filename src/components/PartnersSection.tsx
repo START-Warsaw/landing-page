@@ -1,12 +1,14 @@
 import Image from "next/image";
 
-const partners: { name: string; src?: string; noFilter?: boolean }[] = [
-  { name: "Lovable",   src: "/assets/brands/lovable.svg" },
-  { name: "Cursor",    src: "/assets/brands/cursor.svg" },
-  { name: "PKO BP",    src: "/assets/brands/PKO.svg" },
-  { name: "Coca-Cola", src: "/assets/brands/cocacola.svg" },
-  { name: "Monster",   src: "/assets/brands/monster.svg" },
-  { name: "WSB",       src: "/assets/brands/wsb.svg" },
+const partners: { name: string; src?: string; noFilter?: boolean; width?: number; height?: number }[] = [
+  { name: "Lovable",    src: "/assets/brands/lovable.svg" },
+  { name: "Cursor",     src: "/assets/brands/cursor.svg" },
+  { name: "OpenAI",     src: "/assets/brands/openai-white-lockup.png", width: 190, height: 52 },
+  { name: "ElevenLabs", src: "/assets/brands/elevenlabs.png", width: 250, height: 32 },
+  { name: "EWOR",       src: "/assets/brands/ewor.png", width: 170, height: 42 },
+  { name: "PKO BP",     src: "/assets/brands/PKO.svg" },
+  { name: "Coca-Cola",  src: "/assets/brands/cocacola.svg", width: 220, height: 88 },
+  { name: "WSB",        src: "/assets/brands/wsb.svg" },
 ];
 
 const repeated = Array(8).fill(partners).flat();
@@ -35,8 +37,8 @@ export default function PartnersSection() {
                 <Image
                   src={partner.src}
                   alt={partner.name}
-                  width={partner.name === "Coca-Cola" ? 220 : 160}
-                  height={partner.name === "Coca-Cola" ? 88 : 64}
+                  width={partner.width ?? 160}
+                  height={partner.height ?? 64}
                   className={`object-contain transition-opacity ${
                     partner.name === "Coca-Cola" ? "max-h-20" : "max-h-14"
                   } ${

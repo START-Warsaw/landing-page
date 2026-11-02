@@ -13,18 +13,18 @@ export const metadata: Metadata = {
 };
 
 const board = [
-  { name: "Patryk Ostern",    role: "Co-President",        image: "/assets/members/patryk_ostern.jpg",      linkedin: "https://www.linkedin.com/in/patrykostern/" },
-  { name: "Adam Pasierski",   role: "Co-President",        image: "/assets/members/adam_pasierski.jpg",     linkedin: "https://www.linkedin.com/in/adam-pasierski/" },
-  { name: "Jakub Tybuski",    role: "Head of FinOps",      image: "/assets/members/jakub_tybuski.png",      linkedin: "https://www.linkedin.com/in/jakub-tyburski-417245220/" },
-  { name: "Julia Nobis",      role: "Head of Events",      image: "/assets/members/julia_nobis.jpg",        linkedin: "https://www.linkedin.com/in/julia-nobis-906075294/" },
-  { name: "Tomasz Brzezinski",role: "Head of Marketing",   image: "/assets/members/tomasz_brzezinski.jpg",  linkedin: "https://www.linkedin.com/in/tomaszbrzezinski142/" },
-  { name: "Rem Karablin",     role: "Head of People",      image: "/assets/members/rem_karablin.jpg",       linkedin: "https://www.linkedin.com/in/rem-karablin/" },
-  { name: "Yauheni Futryn",   role: "Head of Partnerships",image: "/assets/members/yauheni_futryn.jpeg",     linkedin: "https://www.linkedin.com/in/yauhenifutryn/" },
+  { name: "Patryk Ostern",    role: "Co-President",        image: "/assets/members/batch_alpha/patryk_ostern.jpg",      linkedin: "https://www.linkedin.com/in/patrykostern/" },
+  { name: "Adam Pasierski",   role: "Co-President",        image: "/assets/members/batch_alpha/adam_pasierski.jpg",     linkedin: "https://www.linkedin.com/in/adam-pasierski/" },
+  { name: "Jakub Tybuski",    role: "Head of FinOps",      image: "/assets/members/batch_alpha/jakub_tybuski.png",      linkedin: "https://www.linkedin.com/in/jakub-tyburski-417245220/" },
+  { name: "Julia Nobis",      role: "Head of Events",      image: "/assets/members/batch_alpha/julia_nobis.jpg",        linkedin: "https://www.linkedin.com/in/julia-nobis-906075294/" },
+  { name: "Tomasz Brzezinski",role: "Head of Marketing",   image: "/assets/members/batch_alpha/tomasz_brzezinski.jpg",  linkedin: "https://www.linkedin.com/in/tomaszbrzezinski142/" },
+  { name: "Rem Karablin",     role: "Head of People",      image: "/assets/members/batch_alpha/rem_karablin.jpg",       linkedin: "https://www.linkedin.com/in/rem-karablin/" },
+  { name: "Yauheni Futryn",   role: "Head of Partnerships",image: "/assets/members/batch_alpha/yauheni_futryn.jpeg",     linkedin: "https://www.linkedin.com/in/yauhenifutryn/" },
 ];
 
 
 const stats = [
-  { value: "20", label: "Total Members" },
+  { value: "41", label: "Total Members" },
 ];
 
 export default function AboutUsPage() {

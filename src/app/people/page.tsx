@@ -3,18 +3,24 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+const genderSplit = [
+  { label: "Male", pct: 80 },
+  { label: "Female", pct: 20 },
+];
+
 const studyFields = [
-  { label: "Business", pct: 51 },
-  { label: "Computer Science", pct: 31 },
-  { label: "Finance", pct: 15 },
+  { label: "Business", pct: 41 },
+  { label: "Computer Science", pct: 34 },
   { label: "Others", pct: 15 },
+  { label: "Finance", pct: 10 },
 ];
 
 const universities = [
-  { label: "SGH", pct: 42 },
-  { label: "WUT", pct: 11 },
-  { label: "PJATK", pct: 11 },
-  { label: "Others", pct: 36 },
+  { label: "SGH", pct: 32 },
+  { label: "UW", pct: 12 },
+  { label: "WUT", pct: 7 },
+  { label: "PJATK", pct: 7 },
+  { label: "Others", pct: 42 },
 ];
 
 function Bar({ pct, color = "bg-pink" }: { pct: number; color?: string }) {
@@ -26,36 +32,65 @@ function Bar({ pct, color = "bg-pink" }: { pct: number; color?: string }) {
 }
 
 const currentBoard = [
-  { name: "Patryk Ostern",     role: "Co-President",         dept: "Executive",    photo: "/assets/members/patryk_ostern.jpg",      linkedin: "https://www.linkedin.com/in/patrykostern/" },
-  { name: "Adam Pasierski",    role: "Co-President",         dept: "Executive",    photo: "/assets/members/adam_pasierski.jpg",     linkedin: "https://www.linkedin.com/in/adam-pasierski/" },
-  { name: "Jakub Tybuski",     role: "Head of FinOps",       dept: "FinOps",       photo: "/assets/members/jakub_tybuski.png",      linkedin: "https://www.linkedin.com/in/jakub-tyburski-417245220/" },
-  { name: "Julia Nobis",       role: "Head of Events",       dept: "Events",       photo: "/assets/members/julia_nobis.jpg",        linkedin: "https://www.linkedin.com/in/julia-nobis-906075294/" },
-  { name: "Tomasz Brzezinski", role: "Head of Marketing",    dept: "Marketing",    photo: "/assets/members/tomasz_brzezinski.jpg",  linkedin: "https://www.linkedin.com/in/tomaszbrzezinski142/" },
-  { name: "Rem Karablin",      role: "Head of People",       dept: "HR",           photo: "/assets/members/rem_karablin.jpg",       linkedin: "https://www.linkedin.com/in/rem-karablin/" },
-  { name: "Yauheni Futryn",    role: "Head of Partnerships", dept: "Partnerships", photo: "/assets/members/yauheni_futryn.jpeg",    linkedin: "https://www.linkedin.com/in/yauhenifutryn/" },
+  { name: "Patryk Ostern",     role: "Co-President",         dept: "Executive",    photo: "/assets/members/batch_alpha/patryk_ostern.jpg",      linkedin: "https://www.linkedin.com/in/patrykostern/" },
+  { name: "Adam Pasierski",    role: "Co-President",         dept: "Executive",    photo: "/assets/members/batch_alpha/adam_pasierski.jpg",     linkedin: "https://www.linkedin.com/in/adam-pasierski/" },
+  { name: "Jakub Tybuski",     role: "Head of FinOps",       dept: "FinOps",       photo: "/assets/members/batch_alpha/jakub_tybuski.png",      linkedin: "https://www.linkedin.com/in/jakub-tyburski-417245220/" },
+  { name: "Julia Nobis",       role: "Head of Events",       dept: "Events",       photo: "/assets/members/batch_alpha/julia_nobis.jpg",        linkedin: "https://www.linkedin.com/in/julia-nobis-906075294/" },
+  { name: "Tomasz Brzezinski", role: "Head of Marketing",    dept: "Marketing",    photo: "/assets/members/batch_alpha/tomasz_brzezinski.jpg",  linkedin: "https://www.linkedin.com/in/tomaszbrzezinski142/" },
+  { name: "Rem Karablin",      role: "Head of People",       dept: "HR",           photo: "/assets/members/batch_alpha/rem_karablin.jpg",       linkedin: "https://www.linkedin.com/in/rem-karablin/" },
+  { name: "Yauheni Futryn",    role: "Head of Partnerships", dept: "Partnerships", photo: "/assets/members/batch_alpha/yauheni_futryn.jpeg",    linkedin: "https://www.linkedin.com/in/yauhenifutryn/" },
 ];
 
 const batchAlphaMembers = [
-  { id:  1, name: "Adam Pasierski",      photo: "/assets/members/adam_pasierski.jpg",      linkedin: "https://www.linkedin.com/in/adam-pasierski/" },
-  { id:  2, name: "Ireneusz Dawidowicz", photo: "/assets/members/ireneusz_dawidowicz.jpeg", linkedin: "https://www.linkedin.com/in/ireneusz-dawidowicz/" },
-  { id:  3, name: "Iza Brudzinska",      photo: "/assets/members/iza_brudzinska.jpeg",      linkedin: "https://www.linkedin.com/in/izabelabrudzinska/" },
-  { id:  4, name: "Jakub Kapitan",       photo: "/assets/members/jakub_kapitan.jpg",        linkedin: "https://www.linkedin.com/in/jakub-kapitan-135341326/" },
-  { id:  5, name: "Jakub Koziel",        photo: "/assets/members/jakub_koziel.jpg",         linkedin: "https://www.linkedin.com/in/jakubkoziel/" },
-  { id:  6, name: "Jakub Tybuski",       photo: "/assets/members/jakub_tybuski.png",        linkedin: "https://www.linkedin.com/in/jakub-tyburski-417245220/" },
-  { id:  7, name: "Julia Nobis",         photo: "/assets/members/julia_nobis.jpg",          linkedin: "https://www.linkedin.com/in/julia-nobis-906075294/" },
-  { id:  8, name: "Kacper Warych",       photo: "/assets/members/kacper_warych.jpeg",       linkedin: "https://www.linkedin.com/in/kacperwarych/" },
-  { id:  9, name: "Konrad Brzoskowski",  photo: "/assets/members/konrad_brzoskowski.jpeg",  linkedin: "https://www.linkedin.com/in/konrad-brzoskowski/" },
-  { id: 10, name: "Michał Antos",        photo: "/assets/members/michal_antos.jpg",         linkedin: "https://www.linkedin.com/in/michalantos/" },
-  { id: 11, name: "Mikołaj Stawicki",    photo: "/assets/members/mikolaj_stawicki.jpg",     linkedin: "https://www.linkedin.com/in/mikolaj-stawicki/" },
-  { id: 12, name: "Oskar Kalbarczyk",    photo: "/assets/members/oskar_kalbarczyk.png",     linkedin: "https://www.linkedin.com/in/oskalbarczyk/" },
-  { id: 13, name: "Patryk Borkowski",    photo: "/assets/members/patryk_borkowski.jpeg",    linkedin: "https://www.linkedin.com/in/patryk-borkowski-pb/" },
-  { id: 14, name: "Patryk Ostern",       photo: "/assets/members/patryk_ostern.jpg",        linkedin: "https://www.linkedin.com/in/patrykostern/" },
-  { id: 15, name: "Piotr Czechowski",    photo: "/assets/members/piotr_czechowski.jpg",     linkedin: "https://www.linkedin.com/in/piotr-czechowski4/" },
-  { id: 16, name: "Rem Karablin",        photo: "/assets/members/rem_karablin.jpg",         linkedin: "https://www.linkedin.com/in/rem-karablin/" },
-  { id: 17, name: "Sebastian Wodecki",   photo: "/assets/members/sebastian_wodecki.jpg",    linkedin: "https://www.linkedin.com/in/sebastian-wodecki/" },
-  { id: 18, name: "Tomasz Brzezinski",   photo: "/assets/members/tomasz_brzezinski.jpg",    linkedin: "https://www.linkedin.com/in/tomaszbrzezinski142/" },
-  { id: 19, name: "Yauheni Futryn",      photo: "/assets/members/yauheni_futryn.jpeg",      linkedin: "https://www.linkedin.com/in/yauhenifutryn/" },
-  { id: 20, name: "Yevhen Maltsev",      photo: "/assets/members/yevhen_maltsev.jpg",       linkedin: "https://www.linkedin.com/in/yevhen-maltsev-990500296/" },
+  { id:  1, name: "Adam Pasierski",      photo: "/assets/members/batch_alpha/adam_pasierski.jpg",      linkedin: "https://www.linkedin.com/in/adam-pasierski/" },
+  { id:  2, name: "Ireneusz Dawidowicz", photo: "/assets/members/batch_alpha/ireneusz_dawidowicz.jpeg", linkedin: "https://www.linkedin.com/in/ireneusz-dawidowicz/" },
+  { id:  3, name: "Iza Brudzinska",      photo: "/assets/members/batch_alpha/iza_brudzinska.jpeg",      linkedin: "https://www.linkedin.com/in/izabelabrudzinska/" },
+  { id:  4, name: "Jakub Kapitan",       photo: "/assets/members/batch_alpha/jakub_kapitan.jpg",        linkedin: "https://www.linkedin.com/in/jakub-kapitan-135341326/" },
+  { id:  5, name: "Jakub Koziel",        photo: "/assets/members/batch_alpha/jakub_koziel.jpg",         linkedin: "https://www.linkedin.com/in/jakubkoziel/" },
+  { id:  6, name: "Jakub Tybuski",       photo: "/assets/members/batch_alpha/jakub_tybuski.png",        linkedin: "https://www.linkedin.com/in/jakub-tyburski-417245220/" },
+  { id:  7, name: "Julia Nobis",         photo: "/assets/members/batch_alpha/julia_nobis.jpg",          linkedin: "https://www.linkedin.com/in/julia-nobis-906075294/" },
+  { id:  8, name: "Kacper Warych",       photo: "/assets/members/batch_alpha/kacper_warych.jpeg",       linkedin: "https://www.linkedin.com/in/kacperwarych/" },
+  { id:  9, name: "Konrad Brzoskowski",  photo: "/assets/members/batch_alpha/konrad_brzoskowski.jpeg",  linkedin: "https://www.linkedin.com/in/konrad-brzoskowski/" },
+  { id: 10, name: "Michał Antos",        photo: "/assets/members/batch_alpha/michal_antos.jpg",         linkedin: "https://www.linkedin.com/in/michalantos/" },
+  { id: 11, name: "Mikołaj Stawicki",    photo: "/assets/members/batch_alpha/mikolaj_stawicki.jpg",     linkedin: "https://www.linkedin.com/in/mikolaj-stawicki/" },
+  { id: 12, name: "Oskar Kalbarczyk",    photo: "/assets/members/batch_alpha/oskar_kalbarczyk.png",     linkedin: "https://www.linkedin.com/in/oskalbarczyk/" },
+  { id: 13, name: "Patryk Borkowski",    photo: "/assets/members/batch_alpha/patryk_borkowski.jpeg",    linkedin: "https://www.linkedin.com/in/patryk-borkowski-pb/" },
+  { id: 14, name: "Patryk Ostern",       photo: "/assets/members/batch_alpha/patryk_ostern.jpg",        linkedin: "https://www.linkedin.com/in/patrykostern/" },
+  { id: 15, name: "Piotr Czechowski",    photo: "/assets/members/batch_alpha/piotr_czechowski.jpg",     linkedin: "https://www.linkedin.com/in/piotr-czechowski4/" },
+  { id: 16, name: "Rem Karablin",        photo: "/assets/members/batch_alpha/rem_karablin.jpg",         linkedin: "https://www.linkedin.com/in/rem-karablin/" },
+  { id: 17, name: "Sebastian Wodecki",   photo: "/assets/members/batch_alpha/sebastian_wodecki.jpg",    linkedin: "https://www.linkedin.com/in/sebastian-wodecki/" },
+  { id: 18, name: "Tomasz Brzezinski",   photo: "/assets/members/batch_alpha/tomasz_brzezinski.jpg",    linkedin: "https://www.linkedin.com/in/tomaszbrzezinski142/" },
+  { id: 19, name: "Yauheni Futryn",      photo: "/assets/members/batch_alpha/yauheni_futryn.jpeg",      linkedin: "https://www.linkedin.com/in/yauhenifutryn/" },
+  { id: 20, name: "Yevhen Maltsev",      photo: "/assets/members/batch_alpha/yevhen_maltsev.jpg",       linkedin: "https://www.linkedin.com/in/yevhen-maltsev-990500296/" },
+];
+
+const batchBetaMembers = [
+  { id:  1, name: "Antoni Małocha",        photo: "/assets/members/batch_beta/antoni_malocha.jpg",        linkedin: "https://www.linkedin.com/in/antoni-ma%C5%82ocha-426917389/" },
+  { id:  2, name: "Artem Hordiienko",      photo: "/assets/members/batch_beta/artem_hordiienko.jpg",      linkedin: "https://www.linkedin.com/in/artem-hordiienko/" },
+  { id:  3, name: "Bartosz Kostarczyk",    photo: "/assets/members/batch_beta/bartosz_kostarczyk.jpg",    linkedin: "https://www.linkedin.com/in/kostarczyk" },
+  { id:  4, name: "Dawid Rutkowski",       photo: "/assets/members/batch_beta/dawid_rutkowski.jpg",       linkedin: "https://www.linkedin.com/in/dawid-rutkowski-pl" },
+  { id:  5, name: "Dominik Dyga",          photo: "/assets/members/batch_beta/dominik_dyga.jpeg",         linkedin: "https://www.linkedin.com/in/dominik-dyga-16a208255/" },
+  { id:  6, name: "Gabriela Gacek",        photo: "/assets/members/batch_beta/gabriela_gacek.jpeg",       linkedin: "https://www.linkedin.com/in/gabriela-gacek-37b9152aa/" },
+  { id:  7, name: "Jakub Siuda",           photo: "/assets/members/batch_beta/jakub_siuda.jpg",           linkedin: "https://www.linkedin.com/in/jksiuda/" },
+  { id:  8, name: "Jan Piramidowicz",      photo: "/assets/members/batch_beta/jan_piramidowicz.png",      linkedin: "https://www.linkedin.com/in/jan-piramidowicz/" },
+  { id:  9, name: "Karol Woźniak",         photo: "/assets/members/batch_beta/karol_wozniak.jpeg",        linkedin: "https://www.linkedin.com/in/karwozniak/" },
+  { id: 10, name: "Lidia Krajewska",       photo: "/assets/members/batch_beta/lidia_krajewska.jpeg",      linkedin: "https://www.linkedin.com/in/lidia-krajewska-37ab86395" },
+  { id: 11, name: "Maja Żelazna",          photo: "/assets/members/batch_beta/maja_zelazna.jpg",          linkedin: "https://www.linkedin.com/in/maja-zelazna-70194a" },
+  { id: 12, name: "Mikhail Troian",        photo: "/assets/members/batch_beta/mikhail_troian.jpg",        linkedin: "https://www.linkedin.com/in/mikhail-troian/" },
+  { id: 13, name: "Mikołaj Mlicki",        photo: "/assets/members/batch_beta/mikolaj_mlicki.jpg",        linkedin: "https://www.linkedin.com/in/miko%C5%82aj-mlicki-b200b22a0/" },
+  { id: 14, name: "Robert Miśkiewicz",     photo: "/assets/members/batch_beta/robert_miskiewicz.jpg",     linkedin: "https://www.linkedin.com/in/robert-mi%C5%9Bkiewicz-600273237" },
+  { id: 15, name: "Stanisław Tomaszewski", photo: "/assets/members/batch_beta/stanislaw_tomaszewski.jpg", linkedin: "https://www.linkedin.com/in/stanislawtomaszewski/" },
+  { id: 16, name: "Tymon Kostowski",       photo: "/assets/members/batch_beta/tymon_kostowski.jpeg",      linkedin: "https://www.linkedin.com/in/tymon-kostowski/" },
+  { id: 17, name: "Weronika Żygis",        photo: "/assets/members/batch_beta/weronika_zygis.jpg",        linkedin: "https://www.linkedin.com/in/weronikazygis/" },
+  { id: 18, name: "Wiktor Witczak",        photo: "/assets/members/batch_beta/wiktor_witczak.jpeg",       linkedin: "https://www.linkedin.com/in/wiktor-witczak7/" },
+  { id: 19, name: "Yassin Eldeib",         photo: "/assets/members/batch_beta/yassin_eldeib.png",         linkedin: "https://www.linkedin.com/in/yassin-eldeib-739a28336/" },
+  { id: 20, name: "Zofia Rutkowska",       photo: "/assets/members/batch_beta/zofia_rutkowska.jpeg",      linkedin: "https://www.linkedin.com/in/zofia-rutkowska-9b8902333" },
+  { id: 21, name: "Zuzanna Lesińska",      photo: "/assets/members/batch_beta/zuzanna_lesinska.png",      linkedin: "https://www.linkedin.com/in/zuzanna-lesi%C5%84ska" },
+];
+
+const batches = [
+  { key: "alpha", title: "Batch Alpha", subtitle: "First Generation · 20 Members",  members: batchAlphaMembers },
+  { key: "beta",  title: "Batch Beta",  subtitle: "Second Generation · 21 Members", members: batchBetaMembers },
 ];
 
 
@@ -93,7 +128,7 @@ export default function PeoplePage() {
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  priority
+                  preload
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent" />
               </div>
@@ -118,7 +153,7 @@ export default function PeoplePage() {
                   Gender Distribution
                 </p>
                 <div className="space-y-5">
-                  {[{ label: "Male", pct: 90 }, { label: "Female", pct: 10 }].map((item) => (
+                  {genderSplit.map((item) => (
                     <div key={item.label}>
                       <div className="flex justify-between mb-2">
                         <span className="text-white text-[13px] font-semibold">{item.label}</span>
@@ -220,44 +255,51 @@ export default function PeoplePage() {
           </div>
         </section>
 
-        {/* ── Batch Alpha ── */}
-        <section className="bg-navy-dark border-t border-white/5 py-24 px-6">
-          <div className="max-w-[1400px] mx-auto">
-            <div className="mb-16">
-              <p className="text-pink text-[11px] font-semibold uppercase tracking-[0.3em] mb-4">
-                Member Batches
-              </p>
-              <h2 className="text-[clamp(32px,4vw,52px)] font-black text-white uppercase leading-tight tracking-tight">
-                Batch Alpha
-              </h2>
-              <p className="text-white/40 text-[13px] uppercase tracking-[0.15em] mt-2 font-semibold">
-                First Generation · 20 Members
-              </p>
-            </div>
+        {/* ── Member Batches ── */}
+        {batches.map((batch, i) => (
+          <section
+            key={batch.key}
+            className={`${i % 2 === 0 ? "bg-navy-dark" : ""} border-t border-white/5 py-24 px-6`}
+          >
+            <div className="max-w-[1400px] mx-auto">
+              <div className="mb-16">
+                {i === 0 && (
+                  <p className="text-pink text-[11px] font-semibold uppercase tracking-[0.3em] mb-4">
+                    Member Batches
+                  </p>
+                )}
+                <h2 className="text-[clamp(32px,4vw,52px)] font-black text-white uppercase leading-tight tracking-tight">
+                  {batch.title}
+                </h2>
+                <p className="text-white/40 text-[13px] uppercase tracking-[0.15em] mt-2 font-semibold">
+                  {batch.subtitle}
+                </p>
+              </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
-              {batchAlphaMembers.map((m) => (
-                <a key={m.id} href={m.linkedin} target="_blank" rel="noopener noreferrer" className="group rounded-2xl overflow-hidden border border-white/10 bg-navy hover:border-white/25 transition-colors block">
-                  <div className="aspect-square relative overflow-hidden">
-                    <Image
-                      src={m.photo}
-                      alt={m.name}
-                      fill
-                      className="object-cover object-center grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-400"
-                      sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 14vw"
-                    />
-                  </div>
-                  <div className="px-4 py-3 flex items-center justify-between gap-2">
-                    <p className="text-white text-[12px] font-bold leading-snug truncate">{m.name}</p>
-                    <svg className="shrink-0 text-white/30 group-hover:text-white/70 transition-colors" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                    </svg>
-                  </div>
-                </a>
-              ))}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                {batch.members.map((m) => (
+                  <a key={m.id} href={m.linkedin} target="_blank" rel="noopener noreferrer" className={`group rounded-2xl overflow-hidden border border-white/10 ${i % 2 === 0 ? "bg-navy" : "bg-navy-dark"} hover:border-white/25 transition-colors block`}>
+                    <div className="aspect-square relative overflow-hidden">
+                      <Image
+                        src={m.photo}
+                        alt={m.name}
+                        fill
+                        className="object-cover object-center grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-400"
+                        sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 14vw"
+                      />
+                    </div>
+                    <div className="px-4 py-3 flex items-center justify-between gap-2">
+                      <p className="text-white text-[12px] font-bold leading-snug truncate">{m.name}</p>
+                      <svg className="shrink-0 text-white/30 group-hover:text-white/70 transition-colors" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      </svg>
+                    </div>
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        ))}
 
         {/* ── CTA ── */}
         <section className="border-t border-white/5 py-28 px-6 text-center">
