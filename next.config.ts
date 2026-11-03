@@ -15,6 +15,11 @@ const nextConfig: NextConfig = {
         destination: "/apply",
         permanent: true,
       },
+      {
+        source: "/jobs",
+        destination: "https://start-jobs-six.vercel.app/jobs",
+        permanent: false,
+      },
     ];
   },
 };
