@@ -9,18 +9,18 @@ const genderSplit = [
 ];
 
 const studyFields = [
-  { label: "Business", pct: 41 },
-  { label: "Computer Science", pct: 34 },
-  { label: "Others", pct: 15 },
+  { label: "Business", pct: 42.5 },
+  { label: "Computer Science", pct: 35 },
+  { label: "Others", pct: 12.5 },
   { label: "Finance", pct: 10 },
 ];
 
 const universities = [
-  { label: "SGH", pct: 32 },
-  { label: "UW", pct: 12 },
-  { label: "WUT", pct: 7 },
-  { label: "PJATK", pct: 7 },
-  { label: "Others", pct: 42 },
+  { label: "SGH", pct: 32.5 },
+  { label: "UW", pct: 12.5 },
+  { label: "WUT", pct: 7.5 },
+  { label: "PJATK", pct: 7.5 },
+  { label: "Others", pct: 40 },
 ];
 
 function Bar({ pct, color = "bg-pink" }: { pct: number; color?: string }) {
@@ -72,25 +72,24 @@ const batchBetaMembers = [
   { id:  5, name: "Dominik Dyga",          photo: "/assets/members/batch_beta/dominik_dyga.jpeg",         linkedin: "https://www.linkedin.com/in/dominik-dyga-16a208255/" },
   { id:  6, name: "Gabriela Gacek",        photo: "/assets/members/batch_beta/gabriela_gacek.jpeg",       linkedin: "https://www.linkedin.com/in/gabriela-gacek-37b9152aa/" },
   { id:  7, name: "Jakub Siuda",           photo: "/assets/members/batch_beta/jakub_siuda.jpg",           linkedin: "https://www.linkedin.com/in/jksiuda/" },
-  { id:  8, name: "Jan Piramidowicz",      photo: "/assets/members/batch_beta/jan_piramidowicz.png",      linkedin: "https://www.linkedin.com/in/jan-piramidowicz/" },
-  { id:  9, name: "Karol Woźniak",         photo: "/assets/members/batch_beta/karol_wozniak.jpeg",        linkedin: "https://www.linkedin.com/in/karwozniak/" },
-  { id: 10, name: "Lidia Krajewska",       photo: "/assets/members/batch_beta/lidia_krajewska.jpeg",      linkedin: "https://www.linkedin.com/in/lidia-krajewska-37ab86395" },
-  { id: 11, name: "Maja Żelazna",          photo: "/assets/members/batch_beta/maja_zelazna.jpg",          linkedin: "https://www.linkedin.com/in/maja-zelazna-70194a" },
-  { id: 12, name: "Mikhail Troian",        photo: "/assets/members/batch_beta/mikhail_troian.jpg",        linkedin: "https://www.linkedin.com/in/mikhail-troian/" },
-  { id: 13, name: "Mikołaj Mlicki",        photo: "/assets/members/batch_beta/mikolaj_mlicki.jpg",        linkedin: "https://www.linkedin.com/in/miko%C5%82aj-mlicki-b200b22a0/" },
-  { id: 14, name: "Robert Miśkiewicz",     photo: "/assets/members/batch_beta/robert_miskiewicz.jpg",     linkedin: "https://www.linkedin.com/in/robert-mi%C5%9Bkiewicz-600273237" },
-  { id: 15, name: "Stanisław Tomaszewski", photo: "/assets/members/batch_beta/stanislaw_tomaszewski.jpg", linkedin: "https://www.linkedin.com/in/stanislawtomaszewski/" },
-  { id: 16, name: "Tymon Kostowski",       photo: "/assets/members/batch_beta/tymon_kostowski.jpeg",      linkedin: "https://www.linkedin.com/in/tymon-kostowski/" },
-  { id: 17, name: "Weronika Żygis",        photo: "/assets/members/batch_beta/weronika_zygis.jpg",        linkedin: "https://www.linkedin.com/in/weronikazygis/" },
-  { id: 18, name: "Wiktor Witczak",        photo: "/assets/members/batch_beta/wiktor_witczak.jpeg",       linkedin: "https://www.linkedin.com/in/wiktor-witczak7/" },
-  { id: 19, name: "Yassin Eldeib",         photo: "/assets/members/batch_beta/yassin_eldeib.png",         linkedin: "https://www.linkedin.com/in/yassin-eldeib-739a28336/" },
-  { id: 20, name: "Zofia Rutkowska",       photo: "/assets/members/batch_beta/zofia_rutkowska.jpeg",      linkedin: "https://www.linkedin.com/in/zofia-rutkowska-9b8902333" },
-  { id: 21, name: "Zuzanna Lesińska",      photo: "/assets/members/batch_beta/zuzanna_lesinska.png",      linkedin: "https://www.linkedin.com/in/zuzanna-lesi%C5%84ska" },
+  { id:  8, name: "Karol Woźniak",         photo: "/assets/members/batch_beta/karol_wozniak.jpeg",        linkedin: "https://www.linkedin.com/in/karwozniak/" },
+  { id:  9, name: "Lidia Krajewska",       photo: "/assets/members/batch_beta/lidia_krajewska.jpeg",      linkedin: "https://www.linkedin.com/in/lidia-krajewska-37ab86395" },
+  { id: 10, name: "Maja Żelazna",          photo: "/assets/members/batch_beta/maja_zelazna.jpg",          linkedin: "https://www.linkedin.com/in/maja-zelazna-70194a" },
+  { id: 11, name: "Mikhail Troian",        photo: "/assets/members/batch_beta/mikhail_troian.jpg",        linkedin: "https://www.linkedin.com/in/mikhail-troian/" },
+  { id: 12, name: "Mikołaj Mlicki",        photo: "/assets/members/batch_beta/mikolaj_mlicki.jpg",        linkedin: "https://www.linkedin.com/in/miko%C5%82aj-mlicki-b200b22a0/" },
+  { id: 13, name: "Robert Miśkiewicz",     photo: "/assets/members/batch_beta/robert_miskiewicz.jpg",     linkedin: "https://www.linkedin.com/in/robert-mi%C5%9Bkiewicz-600273237" },
+  { id: 14, name: "Stanisław Tomaszewski", photo: "/assets/members/batch_beta/stanislaw_tomaszewski.jpg", linkedin: "https://www.linkedin.com/in/stanislawtomaszewski/" },
+  { id: 15, name: "Tymon Kostowski",       photo: "/assets/members/batch_beta/tymon_kostowski.jpeg",      linkedin: "https://www.linkedin.com/in/tymon-kostowski/" },
+  { id: 16, name: "Weronika Żygis",        photo: "/assets/members/batch_beta/weronika_zygis.jpg",        linkedin: "https://www.linkedin.com/in/weronikazygis/" },
+  { id: 17, name: "Wiktor Witczak",        photo: "/assets/members/batch_beta/wiktor_witczak.jpeg",       linkedin: "https://www.linkedin.com/in/wiktor-witczak7/" },
+  { id: 18, name: "Yassin Eldeib",         photo: "/assets/members/batch_beta/yassin_eldeib.png",         linkedin: "https://www.linkedin.com/in/yassin-eldeib-739a28336/" },
+  { id: 19, name: "Zofia Rutkowska",       photo: "/assets/members/batch_beta/zofia_rutkowska.jpeg",      linkedin: "https://www.linkedin.com/in/zofia-rutkowska-9b8902333" },
+  { id: 20, name: "Zuzanna Lesińska",      photo: "/assets/members/batch_beta/zuzanna_lesinska.png",      linkedin: "https://www.linkedin.com/in/zuzanna-lesi%C5%84ska" },
 ];
 
 const batches = [
   { key: "alpha", title: "Batch Alpha", subtitle: "First Generation · 20 Members",  members: batchAlphaMembers },
-  { key: "beta",  title: "Batch Beta",  subtitle: "Second Generation · 21 Members", members: batchBetaMembers },
+  { key: "beta",  title: "Batch Beta",  subtitle: "Second Generation · 20 Members", members: batchBetaMembers },
 ];
 
 
